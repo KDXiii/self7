@@ -21,6 +21,18 @@ const grid=new THREE.GridHelper(20,20,0x444444,0x222222);
 scene.add(grid);
 const controls=new THREE.OrbitControls(camera,renderer.domElement);
 controls.target.set(0,0,0);
+controls.enableRotate=true;
+controls.enableZoom=true;
+controls.enablePan=true;
+controls.minDistance=2;
+controls.maxDistance=30;
+controls.minPolarAngle=0;
+controls.maxPolarAngle=Math.PI/2-0.05;
+controls.rotateSpeed=1.0;
+controls.zoomSpeed=1.2;
+controls.panSpeed=0.8;
+controls.enableDamping=true;
+controls.dampingFactor=0.05;
 controls.update();
 window.addEventListener('resize',()=>{
 camera.aspect=window.innerWidth/window.innerHeight;
