@@ -1,6 +1,6 @@
 const scene=new THREE.Scene();
-scene.background=new THREE.Color(0x080820);
-scene.fog=new THREE.Fog(0x080820,10,30);
+scene.background=new THREE.Color(0x02020a);
+scene.fog=new THREE.Fog(0x02020a,10,30);
 
 const camera=new THREE.PerspectiveCamera(45,window.innerWidth/window.innerHeight,0.1,1000);
 camera.position.set(2,3,4);
@@ -24,7 +24,7 @@ const geos=[
     new THREE.BoxGeometry(0.225,0.15,0.225)
 ];
 
-const colors=[0xffbc60,0xffdd99,0x888888,0xaaaaaa];
+const colors=[0xd4944a,0xfff0d0,0x444444,0x555555];
 const meshList=[];
 
 geos.forEach((geo,i)=>{
